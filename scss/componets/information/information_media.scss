@@ -1,53 +1,40 @@
-@media(max-width: 1250px){
+@media(max-width: $xl ){
     .information__wrapper{
-        width: 992px;
+        width: $lg;
     }
 }
 
-@media(max-width: 992px){
+@media(max-width: $lg){
     .information__wrapper{
-        width: 762px;
-        display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-        text-align: center;
-    }
-    .information__text{
-        padding-right: 0;
-    }
-    
-    .information__items{
-        display: flex;
-        width: 50%;
-        flex-direction: column;
-        align-content: center;
-    }
-    .button{
-        padding: 0 0 30px;
-    }
-    
-   img{
-    display: initial;
-   }
-}
-
-@media(max-width: 762px){
-    .information__wrapper{
-        width: 576px;
-        display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
+        width: $md;
+        .information__text{
+            width: 100%;
+            padding: 0 15px 45px;
+            text-align: center;
+        }
+        .information__items{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            flex-direction: column;
+            align-content: center;
+            text-align: center;
+            img{
+                margin: 0 auto;
+            }
+        }
     }
 }
 
-@media(max-width: 576px){
+@media(max-width: $md){
+    .information__wrapper{
+        width: $ms;
+
+    }
+}
+
+@media(max-width: $ms){
     .information__wrapper{
         width: 100%;
-        display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
     }
 }

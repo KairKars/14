@@ -1,15 +1,7 @@
 .information{
+    font-family:$fonts;
     background-color: $bg;
     padding-top: 100px;
-
-    &::after{
-        content: "";
-        display: inline-block;
-        width: 1000px;
-        margin: 0 auto;
-        height: 0.5px;
-        background-color: $text;
-        }
        
     .information__wrapper{
         display: flex;
@@ -18,7 +10,7 @@
     .information__text{
         width: 50%;
         max-width: 100%;
-        padding-right: 150px;
+        padding: 0 150px 0 0;
     }
     h1{
         font-size: 40px;

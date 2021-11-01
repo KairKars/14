@@ -1,64 +1,68 @@
-@media(max-width: 1250px){
+@media(max-width: $xl){
     .organization__wrapper{
-        width: 992px;
+        width: $lg;
     }
 }
 
-@media(max-width: 992px){
+@media(max-width: $lg){
     .organization__wrapper{
-        width: 762px;
+        width: $md;
         display: flex;
         flex-direction: column;
-        align-items: center
+        align-items: center;
+        .organization__text_title{
+            text-align: center;
+            display: flex;
+            justify-content: center;
         }
         p{
             text-align: center;
             padding: 30px 0 60px 0;
         }
-        .organization__text_title{
-            text-align: center;
-        }
         .button{
-            padding-bottom: 50px;
             display: flex;
             justify-content: center;
-            margin: 0 90px;
+            margin: 0 auto;
         }
         .organization__video{
-            padding: 50px 0;
-        
+            width: 100%;
+            padding: 50px 0 0;
+        }
     }
 }
 
-@media(max-width: 762px){
+@media(max-width: $md){
     .organization__wrapper{
-        width: 576px;
+        width: $ms;
         display: flex;
         flex-direction: column;
-        }
         p{
             text-align: center;
-            padding:0;
+            padding: 30px 0 60px 0;
         }
         .button{
-            padding-bottom: 50px;
             display: flex;
             justify-content: center;
-            margin: 0 90px;
         }
-    
+        .organization__video{
+            width: 100%;
+            padding: 50px 0 0;
+        }
+    }
 }
 
-@media(max-width: 576px){
+@media(max-width: $ms){
     .organization__wrapper{
         width: 100%;
         display: flex;
         flex-direction: column;
-    }
     .button{
-        padding-bottom: 50px;
         display: flex;
         justify-content: center;
-        margin: 0 90px;
     }
+    .organization__video{
+        width: 100%;
+        padding: 50px 10px 0 10px;
+    }
+}
 }

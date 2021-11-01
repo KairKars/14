@@ -1,7 +1,8 @@
 .footer{
    background-color: black;
    color: $text_help;
-
+   font-family:$fonts;
+   
     .footer__wrapper{
         display: flex;
         padding: 25px 0;
@@ -14,19 +15,18 @@
         }
         .icon__wrapper{
             display: flex;
-            justify-content: center;
+            justify-content: flex-end;
+            align-content: center;
+            flex-wrap: wrap;
             width: 50%;
-            z-index: 3;
         }
         .img__wrapper{
             width: 10%;
             padding-left: 10px;
-            z-index: 3;
         }
             img{
                 max-width: 100%;
                 display: block;
-                z-index: 3;
             }
     }
    

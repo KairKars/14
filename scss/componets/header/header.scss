@@ -1,8 +1,9 @@
 header{
+    font-family:$fonts;
     background-color: $top_bg;
     padding: 20px 0 100px;
     nav{
-        background-color: rgb(0, 0, 0);
+        background-color: $text_title;
          }
 
     ul{

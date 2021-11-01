@@ -1,0 +1,65 @@
+@media(max-width: $xl ){
+    .team__wrapper{
+        width: $lg;
+    }
+}
+
+@media(max-width: $lg){
+    .team__wrapper{
+        width: $md;
+        display: flex;
+        flex-direction: column;
+        .title{
+            text-align: center;
+        }
+        .team__banner{
+            width: 100%;
+            padding: 0;
+        }
+        .team__contacts{
+            width: 100%;
+            text-align: center;
+      
+            .team__contacts-sub-text{
+                max-width: 100%;
+            }
+        }
+        ul{
+            justify-content: space-evenly;
+        }
+    }     
+}
+
+@media(max-width: $md){
+    .team__wrapper{
+        width: $ms;
+        flex-direction: column;
+    
+        .team__contacts-text{
+            text-align: center;
+        }
+        .team__banner{
+            width: 100%;
+            padding: 0 30px;
+        }
+        ul{
+            justify-content: space-around;
+        }
+        .contacts__img-wrapper{
+            width: 49%;
+            padding: 0 0 15px 0;
+        }
+    }
+}
+
+
+@media(max-width: $ms){
+    .team__wrapper{
+        width: 100%;
+    }
+        .contacts__img-wrapper{
+            width: 100%;
+            padding: 20px;
+        }
+    
+}

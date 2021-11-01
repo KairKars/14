@@ -1,71 +1,42 @@
-.registration{
-    padding: 100px 0 ;
-
-    .title{
-        text-align:start;
-        padding: 0 0 70px;
-        h3{
-            @extend %tittel;
-        }
-        .title__under{
-           @extend  %tittel__text;
-        }
-        &::after{
-            @extend %Lower__underscore
-        } 
+@media(max-width: $xl ){
+    .registration__wrapper{
+        width: $lg;
     }
+}
 
-.registration__wrapper{
-    display: flex;
-    
-    form{
-        width: 50%;
-    
-    .neme{
-        padding: 0 0 30px 0;
-        label{
-            &:not(:last-child){
-                padding-right: 21px ;
+@media(max-width: $lg){
+    .registration__wrapper{
+        width: $md;
+    }
+}
+
+@media(max-width: $md){
+    .registration__wrapper{
+        width: $ms;
+    }
+}
+
+@media(max-width: $ms){
+    .registration__wrapper{
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        form{
+            width: 90%;
+        }
+        .inform{
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            margin: 30px 0 0 0;
+            background-color: $bg_registration;
+            h4{
+                padding: 0 0 25px 0;
+            }
+            p{
+                padding: 15px 0 0 0;
             }
         }
-
-        input{
-            padding: 14px 0 15px 10px;
-            width: 300px;
-
-        }
     }
-    textarea{
-        resize: none;
-        padding: 20px 0 0 30px;
-    }
-    .button{
-        @extend %but;
-        width: 100%;
-
-        &:hover{
-            @extend %pressing;
-        }
-    }
-    }
-    .inform{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        justify-content: center;
-        color: $text_help;
-        background-color: #2d2d2d;
-        width: 50%;
-        margin-left: 70px;
-        h4{
-            text-transform: uppercase;
-            font-size: $title__under;
-            padding: 0 0 25px 40px;
-        }
-        p{
-            padding: 15px 0 0 40px;
-        }
-    }
-}    
 }

@@ -1,5 +1,7 @@
 .organization{
+    font-family:$fonts;
     background-color: $top_bg;
+    font-family: 'Open Sans', sans-serif;
     .organization__wrapper{
         display: flex;
         flex-wrap: wrap;
@@ -13,9 +15,9 @@
     }
     .organization__text_title{
         text-transform: uppercase;
-        font-size: 35px;
-       font-weight: 900;
-       max-width: 100%;
+        font-size: $title;
+        font-weight: 900;
+        max-width: 100%;
     }
     p{
         max-width: 100%;
@@ -23,9 +25,11 @@
     }
     .organization__video{
         display: flex;
-        // width: 50%;
-        // justify-content: flex-end;
-        box-shadow: 0px 0px 10px 15px
+        width: 50%;
+        justify-content: flex-end;
+        iframe{
+            box-shadow: 12px 12px 10px 1px black;
+        }
     }
 
     .button{
